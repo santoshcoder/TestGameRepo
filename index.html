@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="Css/bootstrap.min.css"></link>
+<link rel="stylesheet" href="Css/jquery.dataTables.min.css"></link>
+<link rel="stylesheet" href="Css/responsive.dataTables.min.css"></link>
+<link rel="stylesheet" href="fontawesome/css/solid.min.css"></link>
+<link rel="stylesheet" href="fontawesome/css/brands.min.css"></link>
+<link rel="stylesheet" href="fontawesome/css/fontawesome.min.css"></link>
+
+<script src="Scripts/Plugins/jquery.min.js"></script>
+<script src="Scripts/Plugins/bootstrap.min.js"></script>
+<script src="Scripts/Plugins/jquery.dataTables.min.js"></script>
+<script src="Scripts/Code/Script.js"></script>
+<script src="Scripts/Plugins/bootstrap3-typeahead.min.js"></script>
+<script src="fontawesome/js/all.js"></script>
+
+<style>
+	input{
+		border-radius: 5px;
+	}
+</style>
+</head>
+
+
+	<body>
+
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" href="#"><i class="fas fa-gamepad"></i> Sapient Games Arena</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#"><i class="fas fa-envelope"></i> santuidea.edu@gmail.com</a></li>
+		        <li><a href="#"><i class="fas fa-mobile-alt"></i> +91-9908182312</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+		  
+		<div class="container">
+		 	<h2>Sapient Games Arena — Listing the games developed for different platforms !</h2>
+			
+		 	<br/>
+		 	<div id="divMsg"></div>
+		 	<button type="button" class="btn btn-success" id="btnClr" disabled>Clear Local Storage</button>
+		 	<button type="button" class="btn btn-primary" id="btnRefresh">Refresh DataTable</button>
+			<br/>
+			<br/>
+			<div class="table-responsive">
+			    <table id="tblGames" class="table table-bordered table-hover">
+			        <thead>
+			            <tr>
+			                <th>Title</th>
+			                <th>Url</th>
+			                <th>Platform</th>
+			                <th>Score</th>
+			                 <th>Url</th>
+			                <th>Platform</th>
+			                <th>Release Year</th>
+			               
+			            </tr>
+			        </thead>
+			        <tbody>
+			        <tr style="text-align: center;"><td colspan="7"><img height='75' widht='75' alt='loading' src='images/preloader.gif'></td></tr>
+			        </tbody>
+			       
+			    </table>
+			    
+			    </div>
+		</div>
+	</body>
+</html>
